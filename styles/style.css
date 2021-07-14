@@ -29,9 +29,9 @@ header {
   font-size: 60px;
   color: #ffffff;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
-.header-button {
+.button {
   display: flex;
   width: 168px;
   height: 44px;
@@ -40,10 +40,10 @@ header {
   justify-content: space-evenly;
   transition: 0.5s;
 }
-.header-button:hover {
+.button:hover {
   transform: scale(1.1);
 }
-.header-button a,
+.button a,
 i {
   color: #ffffff;
   font-size: 16px;
