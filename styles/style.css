@@ -18,20 +18,19 @@ header {
   justify-content: space-between;
   width: 80%;
   padding: 50px;
-  align-items: center;
   line-height: 80px;
 }
-.header-text {
+.header-text p {
   font-size: 64px;
   color: #ffffff;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 .header-button {
   display: flex;
   width: 168px;
   height: 44px;
   background-color: #e02c6d;
-  padding: 10px 24px;
   align-items: center;
   justify-content: space-evenly;
   transition: 0.5s;
@@ -55,3 +54,30 @@ i {
 }
 
 /* header end  */
+
+/* main section start */
+.main-container {
+  margin-top: 70px;
+  width: 80%;
+  margin: 70px auto;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 27px;
+}
+.player {
+  padding: 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img {
+  width: 300px;
+  height: 256px;
+  width: 100%;
+}
+.player p {
+  color: #6c6c6c;
+}
+/* main section end */
