@@ -9,7 +9,7 @@ body {
 hr {
   border: 1px solid rgb(190, 189, 189);
   width: 80%;
-  margin: 100px auto;
+  margin: 80px auto;
 }
 
 /* header start  */
@@ -118,7 +118,7 @@ i {
 /* partners section start  */
 .partners {
   width: 80%;
-  padding: 50px;
+  padding: 50px 0px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   justify-content: center;
@@ -135,7 +135,91 @@ i {
   justify-content: space-evenly;
 }
 /* partners section end  */
+/* next matches end  */
+.next-matches h1 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.matches {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 80%;
+}
+.match-banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d25a0;
+  padding: 0px 20px;
+}
+.next p i {
+  font-size: 20px;
+  font-weight: 700;
+  color: orange;
+}
+.match-dates {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+}
 
+.date p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+  color: orange;
+}
+.dates p {
+  margin-top: 5px 10px;
+  line-height: 5px;
+  font-weight: 700;
+  color: white;
+}
+.dates .day {
+  margin-top: 25px;
+  margin-left: 5px;
+}
+.dates .month {
+  margin-left: 5px;
+}
+.match {
+  width: 48%;
+  background-image: linear-gradient(to left, #2d25a0, #e02c6d, #2d25a0);
+}
+.team-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.team-logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.time {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0px 20px;
+  color: white;
+}
+.team-name {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  /* font-weight: 700; */
+  margin-top: 20px;
+  padding-bottom: 50px;
+  color: white;
+  align-items: center;
+}
+.team-name span {
+  font-size: 16px;
+}
+/* next matches end  */
 /* footer start  */
 footer {
   display: flex;
