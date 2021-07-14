@@ -1,9 +1,12 @@
-/* fonst  */
+/* ------------------------
+      google  fonst  
+------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
-/* common styles or utilities*/
-* {
-}
+/*------------------------
+common styles or utilities
+-------------------------*/
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +18,10 @@ hr {
   margin: 80px auto;
 }
 
-/* header start  */
+/* ---------------------
+      header style start
+-----------------------  */
+
 header {
   background-color: #2d25a0;
   display: flex;
@@ -61,36 +67,40 @@ i {
   transform: scale(0.9) rotate(15deg);
 }
 
-/* header end  */
+/* -------------------------
+        header style end
+  --------------------------  */
 
 /* main section start */
 .main-container {
   width: 80%;
   margin: 70px auto;
 }
-
 .players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
-  row-gap: 27px;
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
 }
 .player {
   padding: 15px;
-  width: 300px;
+
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 .player img {
-  width: 300px;
-  height: 256px;
+  width: 100%;
 }
 .player p {
   color: #6c6c6c;
   text-align: justify;
 }
-/* main section end */
+/* ------------------------
+      main section end
+  ----------------------- */
 
-/* highlights start  */
+/* ------------------------
+    highlight section start
+  ------------------------- */
 .highlights-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -99,7 +109,7 @@ i {
   justify-items: center;
   margin: auto;
   width: 80%;
-  padding: 50px;
+  /* padding: 50px; */
   line-height: 80px;
   margin-top: 80px;
   margin-bottom: 50px;
@@ -119,9 +129,13 @@ i {
   width: 567px;
   height: 427px;
 }
-/* highlights start  */
+/* --------------------------
+    highlights section end
+  ---------------------------*/
 
-/* partners section start  */
+/* ----------------------------
+  partners section start
+--------------------------  */
 .partners {
   width: 80%;
   padding: 50px 0px;
@@ -140,8 +154,13 @@ i {
   display: flex;
   justify-content: space-evenly;
 }
-/* partners section end  */
-/* next matches end  */
+/* --------------------------
+    partners section end
+    -------------------------  */
+
+/* ------------------------
+  next matches section start
+  ------------------------  */
 .next-matches h1 {
   text-align: center;
   margin-bottom: 60px;
@@ -168,7 +187,6 @@ i {
   justify-content: space-between;
   margin-top: 0px;
 }
-
 .date p {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -200,7 +218,6 @@ i {
   align-items: center;
   padding-top: 50px;
 }
-
 .team-logo img {
   width: 100px;
   height: 100px;
@@ -216,7 +233,6 @@ i {
   display: flex;
   justify-content: center;
   font-size: 20px;
-  /* font-weight: 700; */
   margin-top: 20px;
   padding-bottom: 50px;
   color: white;
@@ -225,8 +241,13 @@ i {
 .team-name span {
   font-size: 16px;
 }
-/* next matches end  */
-/* footer start  */
+/* ------------------------
+  next matches section end
+  ------------------------  */
+
+/* ---------------------
+  footer section start
+  --------------------- */
 footer {
   display: flex;
   justify-content: center;
@@ -235,7 +256,6 @@ footer {
   width: 483.87px;
   height: 213px;
   text-align: center;
-  /* margin: auto; */
 }
 .footer-logo img {
   width: 483.87px;
@@ -254,22 +274,26 @@ footer {
 .copyright {
   font-size: 18px;
 }
-/* footer end  */
+/* --------------------
+    footer section end 
+ --------------------- */
 
-/* respondive design here  */
+/* ============================
+respondive design starts here 
+============================== */
 
-/* for mobile  */
+/* -----------------------
+     for mobile devices  
+-------------------------*/
 @media only screen and (max-width: 688px) {
-  body {
-    padding: 0px 10px;
-  }
   .header-container {
-    width: 80%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
+    padding: 0px 20px;
   }
   .header-text h1 {
-    font-size: 50px;
+    font-size: 36px;
   }
   .header-left {
     width: 100%;
@@ -331,7 +355,7 @@ footer {
     width: 100%;
   }
   .match:first-child {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   .team-logo img {
     width: 70px;
@@ -345,18 +369,67 @@ footer {
   }
 }
 
-/* for tablet devices */
+/* ------------------------------
+  for ipad / tablet devices 
+------------------------------*/
 
-/* @media only screen and (min-width: 689px) and (max-width: 992px) {
-  .container {
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .header-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-text h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .header-left {
+    width: 60%;
+  }
+  .header-right {
+    width: 40%;
+  }
+  .header-right img {
+    width: 100%;
+    height: 100%;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-right: 20px;
+  }
+  .highlights-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+  }
+  .highlights-text h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .highlights-right img {
+    width: 100%;
+    height: 100%;
+  }
+  .partners {
+    display: grid;
+    margin-top: 50px;
+  }
+  .partners-logo {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    column-gap: 40px;
+    row-gap: 30px;
+  }
+  .matches {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .match {
     width: 100%;
   }
-  .blogs {
-    grid-template-columns: repeat(1, 1fr);
+  .match:first-child {
+    margin-bottom: 50px;
   }
-
-  .players,
-  .courses {
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
+}
